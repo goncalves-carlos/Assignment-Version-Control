@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>REST API</h1>
+    <h2>Create</h2>
+    <form action="http://127.0.0.1:3000/city_post_Create" method="post">
+        City Name:<br><input type="text" name="city_name"> <br><br>
+        Country Code:<br><input type="text" name="country_code"> <br><br>
+        District:<br><input type="text" name="district"> <br><br>
+        Population:<br><input type="text" name="population"> <br><br>
+        <input type="submit" value="Create">
+    </form>
+
+    <hr>
+    <h2>Read</h2>
+    <form action="/city_get" method="get">
+        City Name:<br><input type="text" name="city_name"> <br><br>
+        <input type="submit" value="Read">
+    </form>
+
+    <hr>
+    <h2>Update</h2>
+    <form action="/city_update" method="post">
+        City Name:<br><input type="text" name="city_name"> <br><br>
+        Country Code:<br><input type="text" name="country_code"> <br><br>
+        District:<br><input type="text" name="district"> <br><br>
+        Population:<br><input type="text" name="population"> <br><br>
+        <input type="submit" value="Update">
+    </form>
+
+    <hr>
+    <h2>Delete</h2>
+    <form action="/city_del" method="post">
+        City Name:<br><input type="text" name="city_name"> <br><br>
+        <input type="submit" value="Delete">
+    </form>
+</body>
+</html>
